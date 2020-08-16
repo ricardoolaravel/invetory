@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Edição de Setor')
+@section('title', 'Edição de Tipo')
     
 @section('content_header')
-    <h1>Editar {{ $sector->name }}</h1>
+    <h1>Editar {{ $type->name }}</h1>
 @stop
 
 
@@ -11,11 +11,11 @@
 @section('content')
     <div class="card">
         <div class="card-body">
-            <form action="{{ route('sectors.update', $sector->url) }}" method="POST" style="display: inline-block">
+            <form action="{{ route('types.update', $type->id) }}" method="POST" style="display: inline-block">
                 @csrf
                 @method('PUT')
 
-                @include('admin.pages.sectors._partials.form')
+                @include('admin.pages.types._partials.form')
 
                 <div class="form-group">
                     <button type="submit" class="btn btn-dark"> <i class="fa fa-reply" aria-hidden="true"></i> Editar</button>

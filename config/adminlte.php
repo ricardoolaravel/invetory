@@ -234,12 +234,22 @@ return [
         [
             'text'  =>  'Setores',
             'url'   =>  'admin/sectors',
-            'icon'  =>  'fas fa-city '
+            'icon'  =>  'fas fa-city    '
         ],
         [
             'text' => 'Funcionários',
             'url' => 'admin/employees',
-            'icon' => 'fas fa-briefcase'
+            'icon' => 'fas fa-briefcase '
+        ],
+        [
+            'text' => 'Tipo de Equipamento',
+            'url' => 'admin/types',
+            'icon' => 'fas fa-laptop    '
+        ],
+        [
+            'text' => 'Marcas',
+            'url' => 'admin/providers',
+            'icon' => 'fas fa-industry    '
         ]
     ],
 

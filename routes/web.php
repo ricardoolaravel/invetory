@@ -6,7 +6,23 @@ use App\Models\Employee;
 Route::prefix('admin')
     ->namespace('Admin')
     ->group(function(){
+
+
+    /**
+     * Rota para cadastro de marcas
+     */
     
+    Route::any('providers\search', 'ProviderController@search')->name('providers.search');
+    Route::resource('providers', 'ProviderController');
+
+    /**
+     * Rota para Tipos de Equipamentos
+     */
+    
+    Route::any('types/search', 'TypeController@search')->name('types.search');
+    Route::resource('types', 'TypeController');
+
+
     /**
      * Rota para usuarios
      */
